@@ -1,0 +1,160 @@
+*{
+    font-family: 'Comfortaa', cursive;
+}
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(0, 56, 185);
+}
+body{
+    background: rgba(6, 236, 201, 0.33);
+}
+a {
+    text-decoration: none;
+    /* color: inherit; */
+}
+/*
+    HEADER
+ */
+header{
+    background: #9cf188;
+    height: 70px;
+}
+header h1{
+    margin-top: 15px;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+header ul li{
+    float: left;
+    position: relative;
+}
+header ul li a{
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 20px;
+}
+header ul li a:hover {
+    background: rgba(0, 56, 185, 0.8);
+    transition: 0.5s;
+    color: #fff;
+}
+header ul li ul{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    z-index: 111;
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul li ul li{
+    width: 100%;
+}
+/*
+FORMS
+ */
+
+.reg_form h2{
+    text-align: center;
+    margin: 30px 0;
+}
+.reg_form a{
+    font-size: 1.2em;
+    transition: all .3s;
+    text-decoration: none;
+    margin-left: 60px;
+}
+.reg_form a:hover{
+    margin-left: 55px;
+    transition: all .3s;
+}
+
+/*
+forms
+ */
+
+form div.err p{
+    color: red;
+    font-style: italic;
+    font-size: 0.8rem;
+/*
+пытаюсь сделать расстояния между полями на create
+ */
+}.add-post form div{
+    margin: 2rem 0;
+ }
+
+.sidebar{
+    margin: 1rem 0;
+
+}
+.sidebar ul{
+    background: #9cf188;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: #9cf188;
+    min-height: 200px
+}
+.sidebar ul a{
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid rgba(0, 56, 185, 0.8);
+    transition: all 0.3s;
+}
+.sidebar ul a:hover{
+    padding-left: 10px;
+
+    text-decoration: none;
+}
+
+
+.posts{
+    height: 100%;
+    padding: 40px 100px 100px;
+    margin-left: auto;
+    margin-right: auto;;
+    overflow-y: scroll;
+}
+.posts h2{
+    text-align: center;
+    margin: 1.5rem 0;
+}
+.posts .title-table div{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 56, 185, 0.8);
+    font-weight: 8000;
+}
+.posts .post div{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 56, 185, 0.8);
+
+}
+.posts .post .red a{
+    color: rgb(213, 103, 14);
+}
+.posts .post .del a{
+    color: red;
+}
+
+.posts .post .id{
+    font-weight: bold;
+}
+
+.add-post form div{
+    margin: 2rem 0;
+}
